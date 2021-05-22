@@ -16,6 +16,19 @@ variable "ec2-ami"{
     }
 }
 
-#configuracao dynamoDB
+#maquina ec2
+variable "ec2-config-family"{
+    type = string
+    default = "t2.micro"
+}
+
+
+#security group - config acesso remoto
+variable "cdirs_acesso_remoto" {
+    type = list(string)
+
+    default = ["189.100.70.145/32"]
+  
+}
 
 
