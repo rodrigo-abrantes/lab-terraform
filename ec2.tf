@@ -7,8 +7,7 @@ resource "aws_instance" "dev-windows" {
     vpc_security_group_ids = ["${aws_security_group.acesso-ssh.id}"]
     tags = {
         Name = "ec2-windows-server-${var.ec2-config-family}"
-    }    
-    
+    }      
 }
 
 resource "aws_instance" "dev-linux" {

@@ -10,7 +10,7 @@ resource "aws_security_group" "acesso-ssh" {
     cidr_blocks = var.cdirs_acesso_remoto
   }
   tags = {
-    Name = "permite_ssh"
+    Name = "securitygroup-permite-ssh"
   }  
 }
 ##key_name eh o par de chaves ssh para conexao 
