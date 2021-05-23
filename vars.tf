@@ -6,7 +6,7 @@ variable "aws-account" {
     default = "terraform-aws"  
 }
 
-#imagem da ec2 windows
+#imagens da ec2
 variable "ec2-ami"{
     type = map(string)
 
